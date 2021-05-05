@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+function sorteia(n){
+
+	return Math.round(Math.random() * n);
+
+}
+	
+ var numeroPensado = sorteia(10);
+ console.log(numeroPensado); //com esse comando o navegagdor mostra o resultado antes do chute  //
+
+ var chute = parseInt(prompt("Digite seu chute de 0 a 10 "));
+
+if (chute == numeroPensado) {
+
+	mostra("voce acertou!!, pois o numero sorteado é " + numeroPensado);
+} 
+
+else {
+
+if (chute > numeroPensado) {
+
+	mostra("Errou, O numero que chutou é maior q o sorteado");
+}
+
+else {
+
+	mostra("Errou, O numero que chutou é menor q o sorteado");
+}
+
+}
+
+
+</script>
